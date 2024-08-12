@@ -1,3 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: pink;
+    background-color: rgba(128, 128, 128, 0.20);
+}
+
+.container {
+    background-color: white;
+    width: 1440px;
+    height: 1040px;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.cont-left {
+    width: 30%;
+    background-image: url(bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+.logoBanner {
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 10rem;
+    margin-top: 40%;
 }
