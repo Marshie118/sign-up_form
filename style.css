@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'logoFont';
+    src: url(fonts/norse-bold-webfont.woff2);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 body {
@@ -9,14 +15,14 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.90);
     width: 1440px;
     height: 1040px;
     margin: auto;
     margin-top: 1rem;
     display: flex;
 }
-
+/* left side of container */
 .cont-left {
     width: 30%;
     background-image: url(bg_img.jpg);
@@ -29,4 +35,38 @@ body {
     background-color: rgba(0, 0, 0, 0.404);
     height: 10rem;
     margin-top: 40%;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
+
+.logoBanner > img {
+    max-height: 100%;
+}
+
+.logoBanner > h1 {
+    font-size: 4rem;
+    font-family: 'logoFont',sans-serif;
+    color: white;
+    height: max-content;
+}
+/* right side of container */
+
+.cont-right { 
+    flex: auto;
+    padding-block: 5rem;   
+}
+
+.cont-right > * {
+    padding-inline: 1rem;
+}
+
+.userForm {
+    padding-inline: 0rem;
+}
+
+.form-rows {
+    background-color: rgb(216, 9, 9);
+}
+
