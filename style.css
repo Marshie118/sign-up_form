@@ -93,4 +93,30 @@ body {
     margin-top: 2.5rem;
 }
 
+input {
+    appearance: none;
+    width: 20rem;
+    height: 2rem;
+    padding-inline: 0.3rem;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color:rgb(82, 82, 226);
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 4px 10px;
+}
+
+input:invalid {
+    outline: none;
+    border-color: red;
+}
+
+input:invalid + .spanPw::after {
+    content: "* Passwords do not match";
+    color: rgba(255, 0, 0, 0.9);
+}
+
 

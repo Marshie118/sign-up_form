@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../forms/speaker_form"
+		},
+		{
+			"path": "../forms"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sign-up_form",
+		"liveServer.settings.CustomBrowser": "chrome"
+	}
+}
