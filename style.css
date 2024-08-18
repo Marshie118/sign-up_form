@@ -3,6 +3,10 @@
     src: url(fonts/norse-bold-webfont.woff2);
 }
 
+:root {
+    --btnColor: #596D48;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -118,5 +122,27 @@ input:invalid + .spanPw::after {
     content: "* Passwords do not match";
     color: rgba(255, 0, 0, 0.9);
 }
+/* footer */
 
+button[type="submit"] {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: var(--btnColor);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-block: 0.5rem;
+    padding-inline: 1.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
 
+.loginLink {
+    font-size: 1.2rem;
+}
+
+.loginLink > a {
+    color: var(--btnColor);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
